@@ -15,7 +15,11 @@ npm run [start|test|ng|build|watch]
 
 ## 蛇足
 
-JS のグローバル関数の `fetch` だったり HTTP 通信するようなパッケージの利用（例 `axios` や `superagent` など）だと何が問題なの？
+### Promiseで扱いたい！
+
+RxJSの [toPromise](https://rxjs.dev/deprecations/to-promise) は Deprecated なので [firstValueFrom](https://rxjs.dev/api/index/function/firstValueFrom) or [lastValueFrom](https://rxjs.dev/api/index/function/lastValueFrom) でサービスクラスの呼び出し元には Promise を返却することが可能。
+
+### JS のグローバル関数の `fetch` だったり HTTP 通信するようなパッケージの利用（例 `axios` や `superagent` など）だと何が問題なの？
 
 ![](./img01.png)
 
