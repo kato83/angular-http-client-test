@@ -1,0 +1,5 @@
+<ul>
+  @for (todo of todos; track $index) {
+  <li [attr.data-id]="todo.id">{{ todo.title }}: {{ todo.completed ? '済' : '未' }}</li>
+  }
+</ul>
