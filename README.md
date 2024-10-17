@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
 
+Angular の `HttpClient` を使用するとAPIのモックとテストがとても楽に感じたのでそれを共有するためのサンプルリポジトリ。
+
+## Usage
+
+```sh
+git clone https://github.com/kato83/angular-http-client-test.git
+cd angular-http-client-test
+npm i
+npm run [start|test|ng|build|watch]
+```
+
+## 蛇足
+
+JS のグローバル関数の `fetch` だったり HTTP 通信するようなパッケージの利用（例 `axios` や `superagent` など）だと何が問題なの？
+
+![](./img01.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
